@@ -334,7 +334,7 @@ def main():
                     print("Please connect to a device before running commands.")
                     continue
                 if cmd.args == "init":
-                    print(run_shell_cmd(curr_device, Command(f"{DEVICE_KSU_DEAMON}", "late-init"), debug_mode))
+                    print(run_shell_cmd(curr_device, Command(f"{DEVICE_KSU_DEAMON}", "late-load"), debug_mode))
                 elif cmd.args == "install" or cmd.args == "uninstall":
                     print("Not implemented for now, please check for a newer version of the tool.")
                 else:
